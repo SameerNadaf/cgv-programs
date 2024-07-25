@@ -7,7 +7,6 @@ canvas_height = 500
 canvas = np.ones((canvas_height, canvas_width, 3), dtype=np.uint8) * 255
 
 obj_points = np.array([[100, 100], [200, 100], [200, 200], [100, 200]], dtype=np.int32)
-
 translation_matrix = np.float32([[1, 0, 100], [0, 1, 50]])
 rotation_matrix = cv2.getRotationMatrix2D((150, 150), 45, 1)
 scaling_matrix = np.float32([[1.5, 0, 0], [0, 1.5, 0]])
